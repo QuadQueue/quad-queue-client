@@ -1,0 +1,5 @@
+quad-queue:
+  host: 127.0.0.1
+  port: 1986
+  username: 'default'
+  password: 'default'
