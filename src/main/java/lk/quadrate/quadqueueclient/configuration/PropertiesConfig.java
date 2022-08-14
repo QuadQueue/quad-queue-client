@@ -1,6 +1,9 @@
 package lk.quadrate.quadqueueclient.configuration;
 
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.core.env.PropertySource;
 import org.springframework.core.io.support.EncodedResource;
@@ -8,6 +11,7 @@ import org.springframework.core.io.support.PropertySourceFactory;
 
 import java.io.IOException;
 import java.util.Properties;
+
 
 public class PropertiesConfig implements PropertySourceFactory {
     @Override

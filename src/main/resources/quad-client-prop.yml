@@ -1,5 +1,12 @@
 quad-queue:
-  host: 127.0.0.1
-  port: 1986
-  username: 'default'
-  password: 'default'
+  server:
+    configuration:
+      host: 127.0.0.1
+      port: 1986
+      username: 'default'
+      password: 'default'
+  producer:
+    configuration:
+      url: ${quad-queue.server.configuration.host}:${quad-queue.server.configuration.port}
+#      url: localhost:1986
+      produce-url: /receiver
